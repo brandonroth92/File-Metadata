@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div(class="container" style="padding:50px;width:25%;margin:auto;" )
+  
+    h4 Submit a file to view its size in bytes
+    br
+    form(enctype="multipart/form-data" action="/api/readFile" method="post")
+      input(type="file" name="file")
+      br
+      input(type="submit" value="Upload!")
